@@ -14,4 +14,13 @@
   <properties>
   </properties>
 
+  <!--Precisa do servićo de aplicativo da
+  camada de domínio-->
+  <dependencies>
+    <dependency>
+      <groupId>org.food.ordering.system</groupId>
+      <artifactId>order-application-service</artifactId>
+    </dependency>
+  </dependencies>
+
 </project>

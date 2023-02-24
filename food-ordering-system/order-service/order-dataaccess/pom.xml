@@ -11,7 +11,16 @@
 
   <artifactId>order-dataaccess</artifactId>
 
+  <dependencies>
+    <dependency>
+      <groupId>org.food.ordering.system</groupId>
+      <artifactId>order-application-service</artifactId>
+    </dependency>
+  </dependencies>
+
   <properties>
   </properties>
 
 </project>
+<!--Este terá adaptadores para as portas de saída
+do domínio-->

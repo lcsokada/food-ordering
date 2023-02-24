@@ -14,4 +14,16 @@
   <properties>
   </properties>
 
+  <!--Dependência foi deixada sem versão, mas sim
+  no pom base, para gerenciar todas as versões-->
+  <dependencies>
+    <dependency>
+      <groupId>org.food.ordering.system</groupId>
+      <artifactId>order-domain-core</artifactId>
+    </dependency>
+  </dependencies>
+
 </project>
+
+<!--Precisa de uma dependência para o núcleo do
+domínio-->

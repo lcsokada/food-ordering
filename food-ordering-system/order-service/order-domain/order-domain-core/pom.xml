@@ -15,3 +15,6 @@
   </properties>
 
 </project>
+
+<!--Esse módulo não deve ter dependência, pois
+deve ser o componente mais estável e independente-->

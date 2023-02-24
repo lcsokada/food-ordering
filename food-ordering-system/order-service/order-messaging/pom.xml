@@ -14,4 +14,16 @@
   <properties>
   </properties>
 
+  <!--Terá dependência para solicitar o servićo de
+  aplicativos, já que deve implementar interfaces de
+  mensagens da camada de domínio-->
+  <dependencies>
+    <dependency>
+      <groupId>org.food.ordering.system</groupId>
+      <artifactId>order-application-service</artifactId>
+    </dependency>
+  </dependencies>
+
 </project>
+<!--Este terá adaptadores para as portas de saída
+do domínio-->

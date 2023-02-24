@@ -14,4 +14,30 @@
   <properties>
   </properties>
 
+  <dependencies>
+    <dependency>
+      <groupId>org.food.ordering.system</groupId>
+      <artifactId>order-domain-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.food.ordering.system</groupId>
+      <artifactId>order-application-service</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.food.ordering.system</groupId>
+      <artifactId>order-application</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.food.ordering.system</groupId>
+      <artifactId>order-dataaccess</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.food.ordering.system</groupId>
+      <artifactId>order-messaging</artifactId>
+    </dependency>
+  </dependencies>
+
 </project>
+<!--Terá dependência para todos os módulos.
+Obtém todas as dependências e cria um jar que
+executará o microsservićo de pedidos-->

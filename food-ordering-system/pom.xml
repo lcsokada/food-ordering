@@ -34,7 +34,41 @@ a melhor prática é deixar o relativePath vazio-->
    <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
   </properties>
 
-  <dependencyManagement></dependencyManagement>
+  <!--Quando uma dependência é colocada na sećão de
+  gerenciamento, a versão é especificada sem precisar
+  baixá-la-->
+  <!--Não é necessário a dependência do container aqui,
+  já que essa não será usada por outros módulos, e sim,
+  usará outros módulos-->
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.food.ordering.system</groupId>
+        <artifactId>order-domain-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.food.ordering.system</groupId>
+        <artifactId>order-application-service</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.food.ordering.system</groupId>
+        <artifactId>order-application</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.food.ordering.system</groupId>
+        <artifactId>order-dataaccess</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.food.ordering.system</groupId>
+        <artifactId>order-messaging</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <dependencies></dependencies>
 
