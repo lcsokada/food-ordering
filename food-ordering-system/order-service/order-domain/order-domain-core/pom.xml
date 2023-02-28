@@ -14,6 +14,8 @@
   <properties>
   </properties>
 
+<!--A única dependência desse módulo será o common-domain
+já que esse usa apenas as classes de domínio comuns-->
   <dependencies>
     <dependency>
       <groupId>org.food.ordering.system</groupId>
