@@ -7,6 +7,7 @@ import java.util.Objects;
 //value objects devem ser imutáveis!
 //por isso final. Esse não pode ser modificado
 public class Money {
+    public static final Money ZERO = new Money(BigDecimal.ZERO);
     private final BigDecimal amount;
 
     public Money(BigDecimal amount) {

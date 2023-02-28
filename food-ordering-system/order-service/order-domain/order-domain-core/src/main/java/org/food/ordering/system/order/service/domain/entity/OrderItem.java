@@ -6,6 +6,8 @@ import org.food.ordering.system.domain.valueobject.OrderId;
 import org.food.ordering.system.order.service.domain.valueobject.OrderItemId;
 import org.food.ordering.system.order.service.domain.valueobject.Product;
 
+import java.math.BigDecimal;
+
 public class OrderItem extends BaseEntity<OrderItemId> {
     //Esse campo não será final, já que será atualizado depois
     //durante as regras de negócio
@@ -27,6 +29,12 @@ public class OrderItem extends BaseEntity<OrderItemId> {
         subtotal = builder.subtotal;
     }
 
+    boolean isPriceValid() {
+        return price.isGreaterThanZero() &&
+                price.equals(product.getPrice()) &&
+                price.multiply(new Money(BigDecimal.valueOf(quantity))).equals(subtotal);
+    }
+
     public OrderId getOrderId() {
         return orderId;
     }
@@ -45,6 +53,11 @@ public class OrderItem extends BaseEntity<OrderItemId> {
 
     public Money getSubtotal() {
         return subtotal;
+    }
+
+    void initializeOrderItem(OrderId orderId, OrderItemId orderItemId) {
+        this.orderId = orderId;
+        super.setId(orderItemId);
     }
 
     public static final class Builder {
