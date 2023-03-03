@@ -22,6 +22,11 @@ public class Product extends BaseEntity<ProductId> {
         return price;
     }
 
+    public void updateWithConfirmedNameAndPrice(String name, Money price) {
+        this.name = name;
+        this.price = price;
+    }
+
     //não é necessário o override de equals e hashcode,
     //já que esses já são implementados na classe base
 }
