@@ -5,10 +5,10 @@ For this project, the reference used is the course "<em>Learn Spring boot micros
 
 The project design used in this development is:
 
-<img src='./project-design.png' />
+<img src='./images/project-design.png' />
 
 ---
 
 The order service has the following architecture:
 
-<img src='./order-service-design.png' />
+<img src='./images/order-service-design.png' />
