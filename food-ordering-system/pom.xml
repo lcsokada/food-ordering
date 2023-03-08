@@ -76,7 +76,16 @@ a melhor prática é deixar o relativePath vazio-->
     </dependencies>
   </dependencyManagement>
 
-  <dependencies></dependencies>
+  <dependencies>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-logging</artifactId>
+    </dependency>
+  </dependencies>
 
   <build>
     <!--dependência para adicionar o compilador maven,
