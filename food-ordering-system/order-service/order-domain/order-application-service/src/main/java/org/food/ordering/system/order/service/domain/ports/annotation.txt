@@ -1,0 +1,8 @@
+Pacote que contém as portas, da arquitetura hexagonal.
+Cada uma dessas portas terá seu adaptador correspondente na camada
+de domínio ou na de infraestrutura.
+A arquitetura hexagonal tem dois tipos de portas, as de input e output.
+As portas de entrada, são as interfaces implementadas na camada de domínio e
+usadas pelos clientes da camada de domínio. As portas de saída são implementadas
+pela camada de infraestrutura, como acesso a dados e são usadas pela camada de domínio
+para se comunicar com a camada de infraestrutura.
